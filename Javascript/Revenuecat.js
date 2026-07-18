@@ -1,6 +1,6 @@
 [rewrite_local]
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$) url script-response-body https://raw.githubusercontent.com/Win98Plus/Module_IOS/refs/heads/main/js/revenuecat.js
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) url script-request-header https://raw.githubusercontent.com/Win98Plus/Module_IOS/refs/heads/main/js/deleteHeader.js
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$) url script-response-body https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/Revenuecat.js
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) url script-request-header https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/deleteHeader.js
 
 [mitm]
 hostname=api.revenuecat.com
