@@ -5,11 +5,6 @@
 #!moduleUrl=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/iPremium.sgmodule
 #!howtouse=Shadowrocket
 #iPremium Shadowrocket Configuration
-[General]
-dns-server = https://dns.adguard-dns.com/dns-query
-fallback-dns-server = https://dns.adguard-dns.com/dns-query
-dns-direct-system = false
-dns-fallback-system = false
 
 [Rule]
 AND,((DOMAIN-SUFFIX,googlevideo.com),(PROTOCOL,UDP)),REJECT
