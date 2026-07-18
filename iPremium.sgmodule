@@ -1,8 +1,8 @@
 #!name=iPremium
 #!desc=Allow unlock premium feature and more with Shadowrocket VPN for iOS
-#!author=win98plus
+#!author=Win98Plus
 #!homepage=https://win98plus.com
-#!moduleUrl=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/All_In_One.sgmodule
+#!moduleUrl=https://raw.githubusercontent.com/Win98Plus/iPremium/refs/heads/main/iPremium.sgmodule
 #!howtouse=Shadowrocket
 #iPremium Shadowrocket Configuration
 [Rule]
