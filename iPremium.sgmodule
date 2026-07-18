@@ -2,7 +2,7 @@
 #!desc=Allow unlock premium feature and more with Shadowrocket VPN for iOS
 #!author=Win98Plus
 #!homepage=https://win98plus.com
-#!moduleUrl=https://raw.githubusercontent.com/Win98Plus/iPremium/refs/heads/main/iPremium.sgmodule
+#!moduleUrl=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/iPremium.sgmodule
 #!howtouse=Shadowrocket
 #iPremium Shadowrocket Configuration
 [General]
@@ -34,22 +34,22 @@ youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.c
 spotify-json = type=http-request,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,script-path=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/SpotifyJson.js
 spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/SpotifyProto.js,script-update-interval=0
 SoundCloudGo+=type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/SoundCloud.js
-VSCO = type=http-request ^https://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/VSCO.js, requires-body=true, timeout=60
+VSCO = type=http-request ^https://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) script-path=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/VSCO.js, requires-body=true, timeout=60
 AlightMotion = type=http-response,script-path=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/AlightMotion.js,pattern=^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,max-size=131072,requires-body=true,timeout=10,enable=true
-PicsArt = type=http-request,pattern=^https:\/\/api\.picsart\.com\/gw-v2\/shop\/subscription\/apple\/purchases,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/PicsArt.js,requires-body=true,timeout=60
-PicsArtStorages = type=http-response,pattern=^https:\/\/api\.picsart\.com\/gw-v2\/cloud-storage\/v1\/me\/storages,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/PicsArtStorages.js,requires-body=1,max-size=0
+PicsArt = type=http-request,pattern=^https:\/\/api\.picsart\.com\/gw-v2\/shop\/subscription\/apple\/purchases,script-path=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/PicsArt.js,requires-body=true,timeout=60
+PicsArtStorages = type=http-response,pattern=^https:\/\/api\.picsart\.com\/gw-v2\/cloud-storage\/v1\/me\/storages,script-path=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/PicsArtStorages.js,requires-body=1,max-size=0
 Wink =type=http-response,pattern=^https:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,script-path=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/Wink.js
 Truecaller = type=http-response,pattern=^https:\/\/premium-[^.]+\.truecaller\.com\/v\d+\/(subscriptions\/status|products\/apple)(\?.*)?$,requires-body=1,max-size=0,script-path=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/Truecaller.js
 Lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v\d\/accounts,requires-body=1,max-size=0,script-path=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/Lightroom.js,script-update-interval=-1
 Kinemaster = type=http-response,pattern=^https:\/\/api-account\.kinemasters\.com\/v\d\/user\/subscribe$,requires-body=1,max-size=0,script-path=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/Kinemaster.js
 Camscanner = requires-body=1,script-path=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/CamScanner.js,type=http-response,pattern= https:\/\/(api|api-cs.*)\.intsig\.net\/purchase\/cs\/query_property\?
-BeautyPlus = type=http-response, pattern=https:\/\/(api\.mr\.pixocial\.com\/v1\/manual_unlock|newbeee-api\.beautyplus\.com\/api\/v1\/asset\/balance), script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/BeautyPlus.js, requires-body=true, max-size=-1, timeout=60
+BeautyPlus = type=http-response, pattern=https:\/\/(api\.mr\.pixocial\.com\/v1\/manual_unlock|newbeee-api\.beautyplus\.com\/api\/v1\/asset\/balance), script-path=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/BeautyPlus.js, requires-body=true, max-size=-1, timeout=60
 revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/Locket.js, requires-body=true, max-size=-1, timeout=60
 deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/deleteHeader.js, timeout=60
 RevenueCatVip = type=http-response, pattern=^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/Revenuecat.js, requires-body=true, max-size=-1, timeout=60
 iTunes = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/iTunes.js, requires-body=true, max-size=-1, timeout=60
-Snow = type=http-response, pattern=^https?:\/\/user-snow-api\.snow\.me\/v\d\/purchase\/subscription\/subscriber\/status, script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/Snow.js, requires-body=true, max-size=-1, timeout=60
-Meitu = type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/MeiTuXiuXiu.js
+Snow = type=http-response, pattern=^https?:\/\/user-snow-api\.snow\.me\/v\d\/purchase\/subscription\/subscriber\/status, script-path=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/Snow.js, requires-body=true, max-size=-1, timeout=60
+Meitu = type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,script-path=https://github.com/Win98Plus/iPremium/raw/refs/heads/main/Javascript/Meitu.js
 
 [Map Local]
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
